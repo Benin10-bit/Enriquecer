@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    transition: all 0.3s ease;
+}
+html, body{
+    background: url('img/mountain-aesthetic-3pbvwsg3h7ksq2li.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+}
+h1{
+    color: aliceblue;
+    text-align: center;
+    margin-top: 10vh;
+}
+h3{
+    text-align: center;
+    color: rgb(93, 111, 128);
+}
+#ncartao{
+    background-color: #A7D6E0;
+    border: none;
+    box-shadow: inset 2px 2px 5px #6e9098;
+    border-radius: 10px;
+    height: 6vh;
+    width: 33vw;
+    margin-bottom: -3vh;
+    text-align: center;
+}
+#ncvv, #nval{
+    text-align: center;
+    background-color: #A7D6E0;
+    box-shadow: inset 2px 2px 5px #6e9098;
+    border: none;
+    border-radius: 10px;
+    height: 6vh;
+    width: 15.5vw;
+}
+#ncvv + #nval{
+    margin-left: 2vw;
+}
+.glass {
+    background: rgba(255, 255, 255, 0.1); /* Fundo translúcido */
+    border-radius: 10px; /* Bordas arredondadas */
+    backdrop-filter: blur(10px); /* Desfoque para efeito fosco */
+    -webkit-backdrop-filter: blur(10px); /* Compatibilidade com Safari */
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra leve */
+    height: 40vh;
+    width: 40vw;
+}
+.center, .cartao,.numeros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+}
+#botao{
+    border: none;
+    border-radius: 10px;
+    height: 5vh;
+    width: 20vw;
+    color: aliceblue;
+    background-color: #152735;
+}
+#botao:hover{
+    scale: 1.1;
+    background-color: #1E3A4D;
+}
+#botao:active{
+    scale: 0.8;
+    background-color: #0F1D28;
+}
+.botao{
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}

